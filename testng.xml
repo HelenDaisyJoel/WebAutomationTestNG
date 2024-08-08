@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+  <listeners>
+    <listener class-name="listeners.Listeners"/>
+  </listeners>
+
+  <test thread-count="5" name="DolbyTest">
+    <classes>
+      <class name="tests.VideoPlatformDolbyBookingTest"/>
+    </classes>
+  </test>
+    
+  <test thread-count="5" name="NoneTest">
+    <classes>
+      <class name="tests.VideoPlatformNoneBookingTest"/>
+    </classes>
+  </test>
+</suite>

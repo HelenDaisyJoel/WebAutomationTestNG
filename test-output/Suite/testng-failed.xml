@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listeners.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="DolbyTest(failed)">
+    <classes>
+      <class name="tests.VideoPlatformDolbyBookingTest">
+        <methods>
+          <include name="testBooking"/>
+          <include name="testEncoder"/>
+          <include name="tearDown"/>
+          <include name="testChannel"/>
+          <include name="testSource"/>
+          <include name="testDecoder"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.VideoPlatformDolbyBookingTest -->
+    </classes>
+  </test> <!-- DolbyTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
